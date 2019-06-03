@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
+import urllib.parse
 import requests
 import  json
 import re
@@ -35,8 +36,9 @@ def parse_lang(text):
 
 def parse_text(text):
     text = str(text).split()[1:]
-    # print(text)
-    return str(text)
+    text = ' '.join(text)
+    text = urllib.parse.quote(text.encode('utf-8'))
+    return text
 
 
 def translate(text, lang):
