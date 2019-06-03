@@ -45,8 +45,8 @@ def translate(text, lang):
     url = 'https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20190528T092312Z.9f06ddefe7319609.f74ef3d774a2b73992d6db891079a28d9b2aeb55' + '&text={}'.format(text) + '&lang={}'.format(lang)
     r = requests.get(url).json()
     word = r['text']
-    # print(url)
-    return word[0]
+    word = ' '.join(word)
+    return word
 
 
 @app.route('/', methods=['POST', 'GET'])
