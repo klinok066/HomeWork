@@ -13,9 +13,9 @@ public class Main {
 
         while (!finish) {
             System.out.println("Введите первое число");
-            int num_1 = Scan.nextInt();
+            double num_1 = Scan.nextDouble();
             System.out.println("Введите второе число");
-            int num_2 = Scan.nextInt();
+            double num_2 = Scan.nextDouble();
             System.out.println("Выберите действие: \n" +
                     "сложение(+), вычитание(-), умножение(*), деление(/) или деление по модулю(%)");
 
