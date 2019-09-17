@@ -7,7 +7,7 @@ public class Main {
 
      static void calc() {
         Scanner Scan = new Scanner(System.in);
-        int result;
+        double result;
 
         boolean finish = false;
 
