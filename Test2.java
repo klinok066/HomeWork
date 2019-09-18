@@ -6,7 +6,6 @@ public class Main1 {
     }
 
     static void makeArray(){
-
         int [] array = new int[12];
         for(int i = 0; i < 12; i++) {
                 array[i] = (int)(Math.random() * ((15 + 15 ))- 15);
