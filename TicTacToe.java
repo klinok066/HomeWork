@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class TicTacToe {
 
-    int sizeOfMap = 3;
+    int sizeOfMap = 3;//Здесь можно изменять размер поля
 
-    int numOfDotsToWin = 3;
+    int numOfDotsToWin = 3;//Здесь условия победы (работает при любом размере >= условие)
 
     int[][] gameBoard = new int[sizeOfMap][sizeOfMap];
 
